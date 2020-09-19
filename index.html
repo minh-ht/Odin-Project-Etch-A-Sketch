@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Etch-A-Sketch</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta name="theme-color" content="#1E90FF">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" async></script>
+    </head>
+    <body>
+        <div class="controls">
+            <label for="number">Numble of squares each edge:</label>
+            <input id="number" type="range" name="number" min="0" max="64" value="16">
+            <input type="text" name="showNumber" value="16">
+        </div>
+        <br>
+        <div class="mode">
+            <span>Select mode (shortcut key):</span>
+            <button id="mode1">Standard (1)</button>
+            <button id="mode2">RGB (1)</button>
+            <button id="mode3">Grayscale (3)</button>
+            <button id="mode4">RGB and Grayscale (4)</button>
+        </div>
+        <br>
+        <button id="clear">Clear</button>
+        <div class="container"></div>
+    </body>
+</html>

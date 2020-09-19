@@ -1,0 +1,102 @@
+body {
+    background-image: linear-gradient(35deg, #ffc7c7, #ffe2e2);
+}
+
+.controls {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 34%;
+}
+
+#number {
+    position: relative;
+    top: 6px;
+    appearance: none;
+    background-color: aliceblue;
+    border-radius: 4%;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 14px;
+}
+
+.mode {
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    left: 34%;
+}
+
+.mode button {
+    margin-left: 4px;
+}
+
+#clear {
+    position: relative;
+    top: 32px;
+    left: 48%;
+}
+
+.container {
+    display: grid;
+    gap: 2px;
+    background-color: #3F3F3F;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1%;
+    border-style: groove;
+}
+
+.container div {
+    background-color: #FFF;
+    filter: brightness(100%);
+}
+
+@media only screen and (max-height: 950px), only screen and (max-width: 950px) {
+    .container {
+        width: 600px;
+        height: 600px;
+    }
+
+    .controls, .mode, #clear {
+        left: 15%;
+    }
+}
+
+@media only screen and (max-height: 700px), only screen and (max-width: 700px) {
+    .container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .controls, .mode, #clear {
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .controls, .mode {
+        max-width: 260px;
+        left: 10%;
+    }
+
+    #clear {
+        top: 75px;
+        left: 45%;
+    }
+}
